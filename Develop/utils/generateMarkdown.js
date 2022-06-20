@@ -30,6 +30,7 @@ function renderLicenseBadge(license) {
 function generateMarkdown(data) {
   return 
   `# ${data.title}
+  ${this.renderLicenseBadge(data.license)}
 
   ## Table of Contents
   -[Project Description](#Description)
