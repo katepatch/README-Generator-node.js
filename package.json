@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/katepatch/README-Generator-node.js/issues"
   },
-  "homepage": "https://github.com/katepatch/README-Generator-node.js#readme"
+  "homepage": "https://github.com/katepatch/README-Generator-node.js#readme",
+  "dependencies": {
+    "inquirer": "^9.0.0"
+  }
 }
