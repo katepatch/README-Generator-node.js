@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown')
 const fs = require('fs')
 // TODO: Create an array of questions for user input
 const questions = [
@@ -58,9 +59,9 @@ const questions = [
 
 async function runQuestions () {
     return inquirer.prompt(questions)
-    .then ((answers) => {
-        console.log(answers)
-        return answers
+    .then ((data) => {
+        console.log(data)
+        return data
     })
     .catch((error) => {
         console.log(error)
