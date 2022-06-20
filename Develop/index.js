@@ -13,11 +13,7 @@ const questions = [
         name: 'description',
         message: 'Please give a brief description of your new project.',
     }, 
-    {
-        type: 'input',
-        name: 'table of contents',
-        message: 'Please list the Table of Contents for each section of README',
-    },
+    
     {
         type: 'input',
         name: 'installation',
@@ -29,9 +25,13 @@ const questions = [
         message: 'Please describe usage of project',
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
         message: 'please add project license',
+        choices: ['MIT', 'ISC', 'WTFPL'],
+        filter(val) {
+            return val.toLowerCase();
+        },
     },
     {
         type: 'input',
@@ -55,6 +55,19 @@ const questions = [
     }
 
 ];
+
+async function runQuestions () {
+    return inquirer.prompt(questions)
+    .then ((answers) => {
+        console.log(answers)
+        return answers
+    })
+    .catch((error) => {
+        console.log(error)
+    })
+}
+
+runQuestions();
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
