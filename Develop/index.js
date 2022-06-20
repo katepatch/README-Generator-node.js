@@ -22,7 +22,7 @@ const questions = [
         type: 'input',
         name: 'Installation',
         message: 'Please describe the installation instructions',
-    },
+    }
 ];
 
 // TODO: Create a function to write README file
