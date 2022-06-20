@@ -74,12 +74,12 @@ async function runQuestions () {
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() => {
+function init() {
     runQuestions()
     .then ((data) => fs.writeFileSync('ReadMe.md', generateMarkdown(data)))
     .then (() => console.log('ReadMe successfully written'))
     .catch((err) => console.log(err));
-}
+};
 
 // Function call to initialize app
 init();
