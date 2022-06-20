@@ -71,12 +71,14 @@ async function runQuestions () {
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    
+}
 
 // TODO: Create a function to initialize app
 function init() {
     runQuestions()
-    .then ((data) => fs.writeFileSync('ReadMe.md', generateMarkdown(data)))
+    //.then ((data) => fs.writeFileSync('ReadMe.md', generateMarkdown(data)))
     .then (() => console.log('ReadMe successfully written'))
     .catch((err) => console.log(err));
 };

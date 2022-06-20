@@ -9,22 +9,27 @@ function renderLicenseBadge(license) {
   return badges[license]
 }
 
-//I want to try to combine the three functions into one.
+//I miss read the purpose of these functions.  I thought it was meant to create 3 different license badges.  my mistake.
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-// function renderLicenseLink(license) {
-//   const badgeIsc = {
-    
-//   }
-// }
+function renderLicenseLink(license) {
+  const licenseLink = {
+    mit: 'https://choosealicense.com/licenses/mit/',
+    isc: 'https://choosealicense.com/licenses/isc/',
+    wtfpl: 'https://choosealicense.com/licenses/wtfpl/',
+  }
+  return licenseLink[license]
+}
 
 // // TODO: Create a function that returns the license section of README
 // // If there is no license, return an empty string
-// function renderLicenseSection(license) {
-//   const badgeWtfpl = {
-   
-//   }
-// }
+function renderLicenseSection(license) {
+   if(license){
+    return `This uses the ${this.renderLicenseLink(license)} license`
+   } else {
+    return ''
+   }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -51,7 +56,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  ${data.license}
+  ${this.renderLicenseLink(data.license)}
 
   ## Contributing
   ${data.contributing}
