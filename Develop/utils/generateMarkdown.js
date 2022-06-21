@@ -26,7 +26,7 @@ renderLicenseLink();
 // // If there is no license, return an empty string
 function renderLicenseSection(license) {
    if(license){
-    return `This uses the <${renderLicenseLink(license)}> license`
+    return `You can follow this link <${renderLicenseLink(license)}> to know more`
    } else {
     return ''
    }
