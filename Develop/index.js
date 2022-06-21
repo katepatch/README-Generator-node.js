@@ -75,7 +75,7 @@ async function runQuestions () {
         console.log(error)
     })
 }
-
+runQuestions();
 
 
 // TODO: Create a function to write README file
@@ -84,12 +84,12 @@ async function runQuestions () {
 //}
 
 // TODO: Create a function to initialize app
-function init()  {
-    runQuestions()
-    .then ((data) => fs.writeFileSync('ReadMe.md', generateReadMe(data)))
-    .then (() => console.log('ReadMe successfully written'))
-    .catch((err) => console.log(err));
-};
+// function init()  {
+//     runQuestions()
+//     .then ((data) => fs.writeFileSync('ReadMe.md', generateMarkdown(data)))
+//     .then (() => console.log('ReadMe successfully written'))
+//     .catch((err) => console.log(err));
+// };
 
-// Function call to initialize app
-init();
+// // Function call to initialize app
+// init();
