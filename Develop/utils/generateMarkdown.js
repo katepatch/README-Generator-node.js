@@ -42,13 +42,13 @@ ${renderLicenseBadge(data.license)}
 
 ## Table of Contents
 
-  *[Project Description](#Description)\n
-  *[Installation](#Installation)\n
-  *[Usage](#Usage)\n
-  *[License](#License)\n
-  *[Contributing](#Contributing)\n
-  *[Tests](#Tests)\n
-  *[Questions](#Questions)
+  -[Project Description](##Description)\n
+  -[Installation](##Installation)\n
+  -[Usage](##Usage)\n
+  -[License](##License)\n
+  -[Contributing](##Contributing)\n
+  -[Tests](##Tests)\n
+  -[Questions](##Questions)
 
 ## Description
 
@@ -63,6 +63,8 @@ ${data.installation}
 ${data.usage}
 
 ## License
+
+${data.license}
 
 ${renderLicenseSection(data.license)}
 

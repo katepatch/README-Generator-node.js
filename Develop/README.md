@@ -1,39 +1,41 @@
 
-# README Generator 7.0
+# README Generator
 
-[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 ## Table of Contents
 
-  *[Project Description](#Description)
+  -[Project Description](##Description)
 
-  *[Installation](#Installation)
+  -[Installation](##Installation)
 
-  *[Usage](#Usage)
+  -[Usage](##Usage)
 
-  *[License](#License)
+  -[License](##License)
 
-  *[Contributing](#Contributing)
+  -[Contributing](##Contributing)
 
-  *[Tests](#Tests)
+  -[Tests](##Tests)
 
-  *[Questions](#Questions)
+  -[Questions](##Questions)
 
 ## Description
 
-To create a README for you
+This creates a lovely readme
 
 ## Installation
 
-Answer all of these questions to fill it out
+Answer these questions
 
 ## Usage
 
-Use it have a prof README
+to have a readme
 
 ## License
 
-This uses the <https://choosealicense.com/licenses/wtfpl/> license
+isc
+
+This uses the <https://choosealicense.com/licenses/isc/> license
 
 ## Contributing
 
@@ -41,7 +43,7 @@ Me
 
 ## Tests
 
-this is my 7th test
+this is  my 9th
 
 ## Questions
 
