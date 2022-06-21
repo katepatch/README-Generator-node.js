@@ -62,34 +62,38 @@ async function runQuestions () {
     .then ((data) => {
         const makeMarkdown = generateMarkdown(data)
         console.log(data)
-       fs.writeFile('README.md', makeMarkdown, function(err) {
-        if(err){
-            console.log('Could not save to a file')
-        } else {
-            console.log('Success on new README.md file created')
-        }
-       }  )
+       
         return data
     })
     .catch((error) => {
         console.log(error)
     })
 }
-runQuestions();
+
+//const generateReadMe = (${title, description, installation, usage, license, contributing, tests, github, email})
+//runQuestions();
 
 
 // TODO: Create a function to write README file
-//function writeToFile(fileName, data) {
-
-//}
+function writeToFile(fileName, data) {
+    const makeMarkdown = generateMarkdown(data)
+    fs.writeFile(`README.md`, makeMarkdown, function(err) {
+        if(err){
+            console.log('Could not save to a file')
+        } else {
+            console.log('Success on new README.md file created')
+        }
+       }  )
+}
+writeToFile();
 
 // TODO: Create a function to initialize app
-// function init()  {
-//     runQuestions()
-//     .then ((data) => fs.writeFileSync('ReadMe.md', generateMarkdown(data)))
-//     .then (() => console.log('ReadMe successfully written'))
-//     .catch((err) => console.log(err));
-// };
+function init()  {
+    runQuestions()
+    .then ((data) => fs.writeFileSync('ReadMe.md', generateReadMe(data)))
+    .then (() => console.log('ReadMe successfully written'))
+    .catch((err) => console.log(err));
+};
 
 // // Function call to initialize app
-// init();
+init();
