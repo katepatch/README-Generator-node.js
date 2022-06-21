@@ -26,7 +26,7 @@ renderLicenseLink();
 // // If there is no license, return an empty string
 function renderLicenseSection(license) {
    if(license){
-    return `This uses the ${this.renderLicenseLink(license)} license`
+    return `This uses the ${renderLicenseLink(license)} license`
    } else {
     return ''
    }
@@ -38,7 +38,7 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
-  ${this.renderLicenseBadge(data.license)}
+  ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
   -[Project Description](#Description)
@@ -59,7 +59,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  ${this.renderLicenseSection(data.license)}
+  ${renderLicenseSection(data.license)}
 
   ## Contributing
   ${data.contributing}

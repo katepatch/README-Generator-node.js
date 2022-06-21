@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs')
 const generateMarkdown = require('./utils/generateMarkdown.js')
-const generateReadMe = generateMarkdown()
+//const generateReadMe = generateMarkdown()
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -89,6 +89,7 @@ async function runQuestions () {
 // TODO: Create a function to initialize app
 function init()  {
     runQuestions()
+    //const generateReadMe = generateMarkdown(data)
     .then ((data) => fs.writeFileSync('ReadMe.md', generateReadMe(data)))
     .then (() => console.log('ReadMe successfully written'))
     .catch((err) => console.log(err));
