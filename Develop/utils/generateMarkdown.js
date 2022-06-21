@@ -26,7 +26,7 @@ renderLicenseLink();
 // // If there is no license, return an empty string
 function renderLicenseSection(license) {
    if(license){
-    return `This uses the ${renderLicenseLink(license)} license`
+    return `This uses the <${renderLicenseLink(license)}> license`
    } else {
     return ''
    }
@@ -36,40 +36,48 @@ renderLicenseSection();
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  # ${data.title}
+# ${data.title}
 
-  ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
-  ## Table of Contents
+## Table of Contents
+
   *[Project Description](#Description)\n
   *[Installation](#Installation)\n
   *[Usage](#Usage)\n
   *[License](#License)\n
   *[Contributing](#Contributing)\n
   *[Tests](#Tests)\n
-  *[Questions](#Questions)\n
+  *[Questions](#Questions)
 
-  ## Description
-  ${data.descritpion}
+## Description
 
-  ## Installation
-  ${data.installation}
+${data.description}
 
-  ## Usage
-  ${data.usage}
+## Installation
 
-  ## License
-  ${renderLicenseSection(data.license)}
+${data.installation}
 
-  ## Contributing
-  ${data.contributing}
+## Usage
 
-  ## Tests
-  ${data.tests}
+${data.usage}
 
-  ## Questions
-  For questions my GitHub username is ${data.github}\n
-  Or feel free to email me at ${data.email}
+## License
+
+${renderLicenseSection(data.license)}
+
+## Contributing
+
+${data.contributing}
+
+## Tests
+
+${data.tests}
+
+## Questions
+
+For questions my GitHub username is ${data.github}\n
+Or feel free to email me at ${data.email}
 `
 }
 

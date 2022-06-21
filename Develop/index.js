@@ -85,7 +85,7 @@ async function runQuestions () {
 // function writeToFile(fileName, data) {
 //     fs.writeFile(`ReadME.md`, data())
 // }
-
+// writeToFile()
 // TODO: Create a function to initialize app
 function init()  {
     runQuestions()
