@@ -62,7 +62,13 @@ async function runQuestions () {
     .then ((data) => {
         const makeMarkdown = generateMarkdown(data)
         console.log(data)
-       
+       fs.writeFile(`README.md`, makeMarkdown, function(err) {
+        if(err){
+            console.log('Could not save to a file')
+        } else {
+            console.log('Success on new README.md file created')
+        }
+       }  )
         return data
     })
     .catch((error) => {
@@ -75,17 +81,9 @@ async function runQuestions () {
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    const makeMarkdown = generateMarkdown(data)
-    fs.writeFile(`README.md`, makeMarkdown, function(err) {
-        if(err){
-            console.log('Could not save to a file')
-        } else {
-            console.log('Success on new README.md file created')
-        }
-       }  )
-}
-writeToFile();
+// function writeToFile(fileName, data) {
+//     fs.writeFile(`ReadME.md`, data())
+// }
 
 // TODO: Create a function to initialize app
 function init()  {
