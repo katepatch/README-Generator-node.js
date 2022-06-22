@@ -43,3 +43,5 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
 Here is code for the README generator I created
+
+Link to my video of this project <https://watch.screencastify.com/v/IL3h7F2MEVgqbuQh0NMS>

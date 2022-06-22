@@ -21,15 +21,15 @@
 
 ## Description
 
-Generate a README for your repo
+This will generate a README file for your project
 
 ## Installation
 
-Answer these questions to fill out the sections of the README
+Answer these questions to fill out the sections
 
 ## Usage
 
-Use it to generate a professional README file for your repo
+You can use this to create a professional README for your repo
 
 ## License
 
@@ -39,11 +39,11 @@ You can follow this link <https://choosealicense.com/licenses/wtfpl/> to know mo
 
 ## Contributing
 
-Myself and lots of googling
+Myself
 
 ## Tests
 
-This is a test of this project
+This currently is a test
 
 ## Questions
 
