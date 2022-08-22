@@ -1,7 +1,7 @@
 
-# README Generator
+# Movie Club
 
-[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 
@@ -21,32 +21,32 @@
 
 ## Description
 
-This will generate a README file for your project
+A popular movie reviewer's blog where visitors can comment and interact with the site.
 
 ## Installation
 
-Answer these questions to fill out the sections
+
 
 ## Usage
 
-You can use this to create a professional README for your repo
+Use this to comment on your favorite movies.
 
 ## License
 
-wtfpl
+mit
 
-You can follow this link <https://choosealicense.com/licenses/wtfpl/> to know more
+You can follow this link <https://choosealicense.com/licenses/mit/> to know more
 
 ## Contributing
 
-Myself
+Bryson Benson, Jayden Griffith, Kate Patch
 
 ## Tests
 
-This currently is a test
+
 
 ## Questions
 
-For questions my GitHub username is katepatch
+For questions my GitHub username is JGriffith97, Firm-Tofu10, katepatch
 
-Or feel free to email me at kate.epatch@gmail.com
+Or feel free to email me at griffithjayden97@outlook.com, brysonbenson10@gmail.com, kate.epatch@gmail.com
